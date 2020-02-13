@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # include bpkg  dependencies
-source /usr/local/bin/retry
-source /usr/local/bin/bgo
-source /usr/local/bin/bgowait
+source /root/bashutil/retry
+source /root/bashutil/bgo
+source /root/bashutil/bgowait
 
 # global variables
 

@@ -11,8 +11,7 @@ RUN apt-get update -y && apt-get install make git gettext -y && \
     apt-get install sogo sope4.9-gdl1-postgresql sope4.9-gdl1-mysql mysql-client nginx -y
 
 # use bpkg to handle complex bash entrypoints
-RUN curl -Lo- "https://raw.githubusercontent.com/bpkg/bpkg/master/setup.sh" | bash
-RUN bpkg install cha87de/bashutil -g
+RUN cd /root && git clone https://github.com/cha87de/bashutil
 
 # add config and init files 
 ADD config /opt/docker-config
