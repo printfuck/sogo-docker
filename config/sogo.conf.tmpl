@@ -8,6 +8,7 @@
   SOGoIMAPServer = $IMAP_SERVER;
   SOGoSieveServer = $SIEVE_SERVER;
   SOGoSMTPServer = $SMTP_SERVER;
+  SOGoSMTPAuthenticationType = PLAIN;
   SOGoMailDomain = $MAILDOMAIN;
   SOGoMailingMechanism = smtp;
 
@@ -38,7 +39,7 @@
         viewURL = "$DB_USERVIEW";
         canAuthenticate = YES;
         isAddressBook = YES;
-        userPasswordAlgorithm = md5;
+        userPasswordAlgorithm = sha512-crypt;
       }
     );
 

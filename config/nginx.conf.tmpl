@@ -1,7 +1,7 @@
 server
 {
    listen 80 default;
-   server_name _; 
+   server_name webmail.eris.cc; 
    root /usr/lib/GNUstep/SOGo/WebServerResources/; 
 
    ## requirement to create new calendars in Thunderbird ##
@@ -13,14 +13,14 @@ server
    
    location = /
    {
-      rewrite ^ `https://$server_name/SOGo`; 
+      rewrite ^ https://$server_name/SOGo; 
       allow all; 
    }
 
    # For iOS 7
    location = /principals/
    {
-      rewrite ^ `https://$server_name/SOGo/dav`; 
+      rewrite ^ https://$server_name/SOGo/dav; 
       allow all; 
    }
    location ^~/SOGo
