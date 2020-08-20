@@ -2,7 +2,7 @@
 
 This project results in a Docker image with SOGo service, served by a nginx proxy.
 
-[Docker-Image available on Docker Hub](https://hub.docker.com/r/cha87de/sogo/)
+This fork makes it buildable again.
 
 Configuration options for SOGo can be specified as environment variables:
 
@@ -27,6 +27,4 @@ Configuration options for SOGo can be specified as environment variables:
 
 This Docker images uses the [docker-skeleton](https://github.com/cha87de/docker-skeleton).
 
-## TODOs
 
- - [ ] remove duplicate database specs (e.g. build the connection strings automatically)
